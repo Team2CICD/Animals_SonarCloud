@@ -66,13 +66,6 @@ class App extends Component {
     })
 
   }
-  getFromStorage = () =>{
-    const animalData = JSON.parse(localStorage.getItem("lists"));
-  this.setState({
-      animals : animalData,
-      birds : animalData
-  })
-}
   
   render() {
     
