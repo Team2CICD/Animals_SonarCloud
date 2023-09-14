@@ -68,7 +68,6 @@ class App extends Component {
   }
   getFromStorage = () =>{
     const animalData = JSON.parse(localStorage.getItem("lists"));
- /*   const birdData = JSON.parse(localStorage.getItem("birds")); */
   this.setState({
       animals : animalData,
       birds : animalData
