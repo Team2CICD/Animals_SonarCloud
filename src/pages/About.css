@@ -1,0 +1,7 @@
+.container p {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5; /* default is 1.2 */
+}
+
+/* 15 words or 70 chars per row is considered readable */

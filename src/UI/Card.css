@@ -1,0 +1,36 @@
+.cards {
+  display: inline-block;
+}
+
+.card {
+  margin: 1rem;
+  width: 200px;
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+}
+.card img {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+.btn button {
+  background-color: none;
+  border: none;
+  border-radius: 5px;
+}
+.remove button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  border: none;
+}
