@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
-/* import Animal from './pages/Animal';
-import Bird from './pages/Bird'; */
 import {animals} from './animalsList';
 import {birds} from "./animalsList";
 import Header from './components/Header';
@@ -49,42 +47,18 @@ class App extends Component {
     
     }))
 
-   /* console.log('like handler clicked',name,action) */
   };
 
-/*   likesHandlerBirds = (name,action) => {
-    this.setState((prevState)=>{
-      const updatedBirdArray = prevState.birds.map((bird)=>{
-        if(bird.name === name){
-          if(action === 'add'){
-            return {...bird,likes:bird.likes +1}
-          }else{
-            return{...bird,likes:bird.likes -1}
-          }
-        }else{
-          return bird;
-        }
-      })
-      localStorage.setItem("birds", JSON.stringify(updatedBirdArray))
-      return {
-        birds:updatedBirdArray
-      }
-    })
-  } */
+
   removeHandler = (name,remove) =>{
    const updateArray = this.state[remove].filter((animal)=> animal.name !==name)
    this.setState({
     [remove]:updateArray
    })
-    /* console.log('remove card',name) */
+
   }
 
-/*   removeHandlerBirds = (name) =>{
-    const updatedBirdArray = this.state.birds.filter((bird)=> bird.name!==name)
-    this.setState({
-      birds:updatedBirdArray
-    })
-  } */
+
 
   searchHandler = (e) =>{
     this.setState({
